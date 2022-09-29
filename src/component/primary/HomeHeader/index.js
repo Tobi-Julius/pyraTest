@@ -15,7 +15,7 @@ export const HomeHeader = () => {
         <View style={styles.container}>
           <TouchableOpacity
             activeOpacity={0.6}
-            onPress={() => navigation.navigate("Profile")}
+            onPress={() => navigation.navigate("TopNavigation")}
           >
             <Image source={images.accountImg} style={styles.image} />
           </TouchableOpacity>

@@ -5,6 +5,7 @@ import { layout } from "../../../utils";
 export const styles = StyleSheet.create({
   headerContainer: {
     width: layout.widthPixel(390),
+    flexShrink: 1,
   },
   profilPicture: {
     width: layout.widthPixel(60),

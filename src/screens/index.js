@@ -1,12 +1,12 @@
-import { Feed } from "./feed";
+import { Feed } from "./Feed";
 import { Home } from "./Home";
-import { Search } from "./search";
-import { Notification } from "./notification";
-import { Post } from "./post";
-import { Profile } from "./profile";
-import { Comment } from "./comment";
-import { Posts } from "./posts";
-import { Portfolio } from "./portfolio";
+import { Search } from "./Search";
+import { Notification } from "./Notification";
+import { Post } from "./Post";
+import { Profile } from "./Profile";
+import { Comment } from "./Comment";
+import { Posts } from "./Posts";
+import { Portfolio } from "./Portfolio";
 
 export {
   Home,

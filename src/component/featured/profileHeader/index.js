@@ -5,17 +5,21 @@ import { images } from "../../../constants";
 import { styles } from "./styles";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-export const ProfileHeader = () => {
+export const ProfileHeader = ({ backgroundImage }) => {
   return (
     <View>
-      <ImageBackground source={images.background} style={styles.imageBackgound}>
+      <ImageBackground source={backgroundImage} style={styles.imageBackgound}>
         <SafeAreaView>
           <View style={styles.imgText}>
             <Text textStyle={styles.text} text="Digital Goodies Team" />
           </View>
         </SafeAreaView>
       </ImageBackground>
-      <Image source={images.accountImg} style={styles.accountImg} />
+      <Image
+        source={images.accountImg}
+        resizeMode="cover"
+        style={styles.accountImg}
+      />
     </View>
   );
 };

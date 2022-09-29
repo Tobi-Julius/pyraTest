@@ -7,7 +7,7 @@ import { theme } from "../../../constants";
 import { globalStyles } from "../../../styles";
 import { layout } from "../../../utils";
 
-export const PostList = ({ item, data, index }) => {
+export const PostList = ({ item, data, index, profile }) => {
   return (
     <View
       style={{
@@ -17,8 +17,13 @@ export const PostList = ({ item, data, index }) => {
     >
       <View
         style={{
-          marginBottom:
-            data.length === index + 1 ? layout.pixelSizeVertical(140) : 8,
+          marginBottom: !profile
+            ? data.length === index + 1
+              ? layout.pixelSizeVertical(140)
+              : 8
+            : data.length === index + 1
+            ? layout.pixelSizeVertical(335)
+            : 8,
           paddingTop: layout.pixelSizeVertical(13),
         }}
       >
@@ -65,7 +70,7 @@ export const PostList = ({ item, data, index }) => {
         <View style={[globalStyles.rowCenter]}>
           <View style={styles.headerContainer}>
             <View style={[globalStyles.rowBetween]}>
-              <View style={{ flexDirection: "row" }}>
+              <View style={{ flexDirection: "row", flexShrink: 1 }}>
                 <View style={styles.iconText}>
                   <Feather name="triangle" size={22} color={theme.iconColor} />
                   <Text textStyle={styles.text} text={item.like} />

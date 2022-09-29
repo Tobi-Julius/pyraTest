@@ -4,13 +4,13 @@ import { layout } from "../../../utils";
 
 export const styles = StyleSheet.create({
   imageBackgound: {
-    height: layout.heightPixel(190),
+    height: layout.heightPixel(160),
     width: layout.width,
     paddingVertical: layout.pixelSizeVertical(3),
   },
   imgText: {
     alignItems: "center",
-    marginTop: layout.pixelSizeVertical(50),
+    marginTop: layout.pixelSizeVertical(35),
   },
   text: {
     backgroundColor: theme.text2,

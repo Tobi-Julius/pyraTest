@@ -1,13 +1,12 @@
 import React from "react";
 import { createSharedElementStackNavigator } from "react-navigation-shared-element";
-import { Profile } from "../screens";
 import MainBottomTabNavigation from "./MainBottomTabNavigation";
 import { Entypo, Ionicons } from "@expo/vector-icons";
 import { layout } from "../utils";
 import { TouchableOpacity } from "react-native";
 import { globalStyles } from "../styles";
 import { useNavigation } from "@react-navigation/native";
-
+import { TopNavigation } from "./TopNavigation";
 const Stack = createSharedElementStackNavigator();
 
 const RootNavigation = () => {
@@ -24,8 +23,6 @@ const RootNavigation = () => {
         component={MainBottomTabNavigation}
       />
       <Stack.Screen
-        name="Profile"
-        component={Profile}
         options={{
           animationEnabled: true,
           headerTransparent: true,
@@ -34,10 +31,10 @@ const RootNavigation = () => {
           animation: "slide_from_right",
           animationDuration: 400,
           animationTypeForReplace: "push",
-          gestureEnabled: true,
-          customAnimationOnGesture: true,
+          gestureEnabled: false,
           headerPressOpacity: 0.7,
           presentation: "card",
+          title: "",
           cardStyleInterpolator: ({ current, next }) => {
             const opacity = current.progress.interpolate({
               inputRange: [0, 1],
@@ -60,7 +57,7 @@ const RootNavigation = () => {
           headerLeft: () => (
             <TouchableOpacity
               activeOpacity={0.7}
-              onPress={() => navigation.goBack()}
+              onPress={() => navigation.navigate("MainBottomTabNavigation")}
               style={[
                 globalStyles.rowCenter,
                 {
@@ -77,7 +74,7 @@ const RootNavigation = () => {
           headerRight: () => (
             <TouchableOpacity
               activeOpacity={0.7}
-              onPress={() => navigation.goBack()}
+              onPress={() => {}}
               style={[
                 globalStyles.rowCenter,
                 {
@@ -92,6 +89,8 @@ const RootNavigation = () => {
             </TouchableOpacity>
           ),
         }}
+        name="TopNavigation"
+        component={TopNavigation}
       />
     </Stack.Navigator>
   );
