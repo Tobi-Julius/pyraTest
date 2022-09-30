@@ -20,9 +20,11 @@ export const styles = StyleSheet.create({
   },
   imageContainer: {},
   accountImg: {
+    height: layout.heightPixel(70),
+    width: layout.widthPixel(70),
     position: "absolute",
-    right: layout.pixelSizeHorizontal(20),
-    bottom: -layout.pixelSizeVertical(55),
+    right: layout.pixelSizeHorizontal(15),
+    bottom: -layout.pixelSizeVertical(48),
     zIndex: 1,
   },
 });
