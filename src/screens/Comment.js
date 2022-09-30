@@ -7,10 +7,10 @@ import { CommentBody } from "../component/primary";
 
 export const Comment = () => {
   return (
-    <View>
+    <View style={{ backgroundColor: "white" }}>
       <View style={globalStyles.rowCenter}>
         <View style={{ width: layout.widthPixel(390) }}>
-          <ScrollView>
+          <ScrollView showsVerticalScrollIndicator={false}>
             {commentData.map((item, index) => {
               return (
                 <CommentBody

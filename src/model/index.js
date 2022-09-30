@@ -1,3 +1,3 @@
-import { data, memberShipData, commentData } from "./data";
+import { data, memberShipData, commentData, portFolio } from "./data";
 
-export { data, memberShipData, commentData };
+export { data, memberShipData, commentData, portFolio };

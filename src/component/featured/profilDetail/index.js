@@ -1,4 +1,4 @@
-import { Touchable, TouchableOpacity, View } from "react-native";
+import { TouchableOpacity, View } from "react-native";
 import React from "react";
 import { Text } from "../../common";
 import { globalStyles } from "../../../styles";
@@ -18,7 +18,7 @@ export const ProfileDetail = ({
   atAccountName,
 }) => {
   return !group ? (
-    <View>
+    <View style={{ backgroundColor: "white" }}>
       <View style={[globalStyles.rowCenter]}>
         <View style={styles.container}>
           <View>
@@ -26,8 +26,8 @@ export const ProfileDetail = ({
               style={[
                 styles.rowContainer,
                 {
-                  marginBottom: layout.pixelSizeHorizontal(10),
-                  marginTop: layout.pixelSizeVertical(3),
+                  marginBottom: layout.pixelSizeHorizontal(8),
+                  marginTop: layout.pixelSizeVertical(5),
                 },
               ]}
             >
@@ -49,11 +49,13 @@ export const ProfileDetail = ({
             </View>
           </View>
           <View>
-            <Text textStyle={styles.groupName} text={accountName} />
+            <Text textStyle={styles.accountName} text={accountName} />
             <Text textStyle={styles.member} text={`@${atAccountName}`} />
           </View>
           <View>
             <Text
+              ellipsizeMode={"tail"}
+              numberOfLines={2}
               textStyle={styles.content}
               text="An avid invester in tech companies, with a vision of financial freedom"
             />
@@ -99,7 +101,7 @@ export const ProfileDetail = ({
       </View>
     </View>
   ) : (
-    <View>
+    <View style={{ backgroundColor: "white" }}>
       <View style={[globalStyles.rowCenter]}>
         <View style={styles.container}>
           <View>

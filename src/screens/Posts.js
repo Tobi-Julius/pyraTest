@@ -8,7 +8,7 @@ import { memberShipData } from "../model";
 
 export const Posts = () => {
   return (
-    <View>
+    <View style={{ backgroundColor: "white" }}>
       <View style={[globalStyles.rowCenter]}>
         <View
           style={{

@@ -12,7 +12,7 @@ export const CommentBody = ({ commentData, item, index }) => {
           marginBottom:
             commentData.length === index + 1
               ? layout.pixelSizeHorizontal(18)
-              : 0,
+              : layout.pixelSizeVertical(5),
         }}
       >
         <Text textStyle={styles.headerText} text={item.headerText} />

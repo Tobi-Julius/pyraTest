@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "flex-end",
     marginTop: layout.pixelSizeVertical(10),
-    marginBottom: layout.pixelSizeVertical(12),
+    marginBottom: layout.pixelSizeVertical(9),
   },
   HeaderText: {
     fontFamily: "OpenSans_800ExtraBold",

@@ -11,6 +11,11 @@ export const styles = StyleSheet.create({
     fontFamily: "OpenSans_800ExtraBold",
     fontSize: layout.fontPixel(21),
   },
+  accountName: {
+    fontFamily: "OpenSans_800ExtraBold",
+    fontSize: layout.fontPixel(21),
+    marginTop: layout.pixelSizeVertical(5),
+  },
   varMember: {
     fontFamily: "OpenSans_500Medium",
   },
@@ -67,7 +72,7 @@ export const styles = StyleSheet.create({
     borderRadius: layout.fontPixel(10),
   },
   iconLabel: {
-    fontFamily: "OpenSans_500Medium",
+    fontFamily: "OpenSans_600SemiBold",
     marginRight: layout.pixelSizeHorizontal(3),
   },
 });

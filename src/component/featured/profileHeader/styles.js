@@ -1,11 +1,10 @@
 import { StyleSheet } from "react-native";
-import { theme } from "../../../constants";
 import { layout } from "../../../utils";
 
 export const styles = StyleSheet.create({
   imageBackgound: {
-    height: layout.heightPixel(160),
     width: layout.width,
+    height: layout.heightPixel(160),
     paddingVertical: layout.pixelSizeVertical(3),
   },
   imgText: {
@@ -13,15 +12,17 @@ export const styles = StyleSheet.create({
     marginTop: layout.pixelSizeVertical(35),
   },
   text: {
-    backgroundColor: theme.text2,
-    color: theme.text,
+    backgroundColor: "#B4B4B426",
+    color: "#fcfcfc",
     fontFamily: "OpenSans_600SemiBold",
     fontSize: layout.size.h2,
     paddingHorizontal: layout.pixelSizeHorizontal(4),
   },
+  imageContainer: {},
   accountImg: {
     position: "absolute",
     right: layout.pixelSizeHorizontal(20),
-    bottom: -layout.pixelSizeVertical(57),
+    bottom: -layout.pixelSizeVertical(55),
+    zIndex: 1,
   },
 });

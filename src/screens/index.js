@@ -7,6 +7,10 @@ import { Profile } from "./Profile";
 import { Comment } from "./Comment";
 import { Posts } from "./Posts";
 import { Portfolio } from "./Portfolio";
+import { Group } from "./Group";
+import { CrowdFunds } from "./CrowdFunds";
+import { Echoes } from "./Echoes";
+import { GroupPost } from "./GroupPost";
 
 export {
   Home,
@@ -18,4 +22,8 @@ export {
   Posts,
   Comment,
   Portfolio,
+  Group,
+  CrowdFunds,
+  Echoes,
+  GroupPost,
 };

@@ -2,7 +2,6 @@ import { View } from "react-native";
 import React from "react";
 import { ProfileDetail, ProfileHeader } from "../component/featured";
 import { images } from "../constants";
-import { createSharedElementStackNavigator } from "react-navigation-shared-element";
 
 export const Profile = () => {
   return (

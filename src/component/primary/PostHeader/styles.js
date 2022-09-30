@@ -25,7 +25,7 @@ export const styles = StyleSheet.create({
     top: -35,
   },
   textContainer: {
-    top: -33,
+    top: -40,
     alignItems: "center",
     justifyContent: "center",
   },

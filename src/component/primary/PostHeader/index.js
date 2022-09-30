@@ -28,7 +28,12 @@ export const PostHeader = ({ item, index, memberShipData }) => {
         />
         <View style={styles.textContainer}>
           <Text textStyle={styles.memberOf} text={item.memberOf} />
-          <Text textStyle={styles.totalMembers} text={item.totalMembers} />
+          <Text
+            ellipsizeMode={"tail"}
+            numberOfLines={1}
+            textStyle={styles.totalMembers}
+            text={item.totalMembers}
+          />
         </View>
       </View>
     </View>

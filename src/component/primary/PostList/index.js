@@ -13,20 +13,17 @@ export const PostList = ({ item, data, index, profile }) => {
       style={{
         marginTop: index === 0 ? layout.pixelSizeVertical(1) : 5,
         backgroundColor: "white",
+        // marginBottom: !profile
+        //   ? data.length === index + 1
+        //     ? layout.pixelSizeVertical(140)
+        //     : 2
+        //   : data.length === index + 1
+        //   ? layout.pixelSizeVertical(335)
+        //   : 2,
+        paddingTop: layout.pixelSizeVertical(13),
       }}
     >
-      <View
-        style={{
-          marginBottom: !profile
-            ? data.length === index + 1
-              ? layout.pixelSizeVertical(140)
-              : 8
-            : data.length === index + 1
-            ? layout.pixelSizeVertical(335)
-            : 8,
-          paddingTop: layout.pixelSizeVertical(13),
-        }}
-      >
+      <View style={{ paddingBottom: layout.pixelSizeVertical(8) }}>
         {/* header */}
         <View style={globalStyles.rowCenter}>
           <View style={[globalStyles.rowBetween, styles.headerContainer]}>

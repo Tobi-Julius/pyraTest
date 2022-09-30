@@ -1,14 +1,14 @@
 import React from "react";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
-import { Posts, Comment, Portfolio, Profile } from "../screens";
+import { Group, CrowdFunds, Echoes, GroupPost } from "../screens";
 import { theme } from "../constants";
 import { layout } from "../utils";
 const TopTab = createMaterialTopTabNavigator();
 
-export const TopNavigation = () => {
+export const TopNavigationGroup = () => {
   return (
     <>
-      <Profile />
+      <Group />
       <TopTab.Navigator
         initialRouteName="Posts"
         screenOptions={{
@@ -36,9 +36,9 @@ export const TopNavigation = () => {
           tabBarPressColor: theme.text,
         }}
       >
-        <TopTab.Screen name="Posts" component={Posts} />
-        <TopTab.Screen name="Comments" component={Comment} />
-        <TopTab.Screen name="Portfolio" component={Portfolio} />
+        <TopTab.Screen name="Posts" component={GroupPost} />
+        <TopTab.Screen name="Echoes" component={Echoes} />
+        <TopTab.Screen name="CrowdFunds" component={CrowdFunds} />
       </TopTab.Navigator>
     </>
   );
