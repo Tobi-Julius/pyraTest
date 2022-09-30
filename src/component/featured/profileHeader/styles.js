@@ -18,13 +18,12 @@ export const styles = StyleSheet.create({
     fontSize: layout.size.h2,
     paddingHorizontal: layout.pixelSizeHorizontal(4),
   },
-  imageContainer: {},
   accountImg: {
     height: layout.heightPixel(70),
     width: layout.widthPixel(70),
     position: "absolute",
     right: layout.pixelSizeHorizontal(15),
-    bottom: -layout.pixelSizeVertical(48),
+    bottom: -layout.pixelSizeVertical(55),
     zIndex: 1,
   },
 });
