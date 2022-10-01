@@ -5,7 +5,7 @@ import { layout } from "../../../utils";
 export const styles = StyleSheet.create({
   container: {
     width: layout.widthPixel(390),
-    marginVertical: layout.pixelSizeVertical(5),
+    marginVertical: layout.pixelSizeVertical(10),
   },
   groupName: {
     fontFamily: "OpenSans_800ExtraBold",
